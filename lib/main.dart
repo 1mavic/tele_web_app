@@ -42,12 +42,12 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
-    final tele = TeleWebApp();
-    final a = tele.colorScheme;
-    final v = tele.initDataUnsafe;
-    log(a.toString());
+    // final tele = TeleWebApp();
+    // final a = tele.colorScheme;
+    // final v = tele.initDataUnsafe;
+    // log(a.toString());
 
-    log(v.user?.firstName.toString() ?? "none");
+    // log(v.user?.firstName.toString() ?? "none");
     return Scaffold(
       appBar: AppBar(
         title: Text(widget.title),
@@ -57,7 +57,7 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text(
-              (v.user?.firstName ?? "none").toString(),
+              ("none").toString(),
             ),
             Text(
               '$_counter',
